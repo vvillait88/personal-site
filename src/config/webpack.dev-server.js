@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const globals = require('./globals');
 const externals = require('./node-externals');
 
 module.exports = {
@@ -8,7 +9,10 @@ module.exports = {
   externals,
   entry  : './src/server/render.js',
   mode   : 'development',
-  output : {
+  node   : {
+    fs: 'empty'
+  },
+  output: {
     filename      : 'dev-server-bundle.js',
     chunkFilename : '[name].js',
     path          : path.resolve(__dirname, '../../build'),
@@ -26,13 +30,14 @@ module.exports = {
         ]
       },
       {
-        test : /\.css$/,
-        use  : {
-          loader: 'css-loader',
-        }
+        test : /\.(css|scss|sass)$/,
+        use  : [
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
+        ]
       },
       {
-        test : /\.jpg$/,
+        test : /\.(jpg|png|gif)$/,
         use  : [
           {
             loader  : 'file-loader',
@@ -42,6 +47,25 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test : /\.(mp4|webm)$/,
+        use  : [
+          {
+            loader  : 'file-loader',
+            options : {
+              name: 'videos/[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test   : /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader : 'url-loader?limit=10000&minetype=application/font-woff'
+      },
+      {
+        test   : /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader : 'file-loader?name=[name].[ext]'
       },
       {
         test : /\.md$/,
@@ -59,8 +83,8 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('development')
+        ...globals
       }
-    })
+    }),
   ]
 };

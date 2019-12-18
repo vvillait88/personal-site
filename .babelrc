@@ -11,7 +11,7 @@
     ],
     "babel-preset-react"
   ],
-  "plugins": ["syntax-dynamic-import", "universal-import"],
+  "plugins": ["syntax-dynamic-import", "universal-import", "transform-object-rest-spread"],
   "env": {
     "development": {
       "plugins": ["react-hot-loader/babel"]

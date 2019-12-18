@@ -6,6 +6,7 @@
       "node": true
     },
     "rules": {
+      "react/jsx-fragments": 0,
       "comma-dangle": 0,
       "camelcase": 1,
       "semi": 2,

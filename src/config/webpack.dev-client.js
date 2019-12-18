@@ -1,11 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const globals = require('./globals');
 
 module.exports = {
-  name  : 'client',
-  mode  : 'development',
-  entry : {
+  name : 'client',
+  mode : 'development',
+  node : {
+    fs: 'empty'
+  },
+  entry: {
     vendor : ['react', 'react-dom'],
     main   : [
       'react-hot-loader/patch',
@@ -55,12 +59,16 @@ module.exports = {
         ]
       },
       {
-        test : /\.css$/,
+        test : /\.(css|scss|sass)$/,
         use  : [
-          { loader: ExtractCssChunks.loader },
           {
-            loader: 'css-loader'
-          }
+            loader  : MiniCssExtractPlugin.loader,
+            options : {
+              hmr: true
+            }
+          },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
         ]
       },
       {
@@ -75,6 +83,25 @@ module.exports = {
         ]
       },
       {
+        test : /\.(mp4|webm)$/,
+        use  : [
+          {
+            loader  : 'file-loader',
+            options : {
+              name: 'videos/[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test   : /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader : 'url-loader?limit=10000&minetype=application/font-woff'
+      },
+      {
+        test   : /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader : 'file-loader?name=[name].[ext]'
+      },
+      {
         test : /\.md$/,
         use  : [
           {
@@ -85,11 +112,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractCssChunks({ hot: true }),
+    new MiniCssExtractPlugin({}),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV : JSON.stringify('development'),
-        WEBPACK  : true
+        ...globals
       }
     }),
     new webpack.HotModuleReplacementPlugin()

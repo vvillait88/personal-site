@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const externals = require('./node-externals');
+const globals = require('./globals');
 
 module.exports = {
   name   : 'server',
@@ -8,7 +9,10 @@ module.exports = {
   externals,
   entry  : './src/server/render.js',
   mode   : 'production',
-  output : {
+  node   : {
+    fs: 'empty'
+  },
+  output: {
     filename      : 'prod-server-bundle.js',
     path          : path.resolve(__dirname, '../../build'),
     libraryTarget : 'commonjs2'
@@ -25,24 +29,42 @@ module.exports = {
         ]
       },
       {
-        test : /\.css$/,
+        test : /\.(css|scss|sass)$/,
         use  : [
-          {
-            loader: 'css-loader'
-          }
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
         ]
       },
       {
-        test : /\.jpg$/,
+        test : /\.(jpg|png|gif)$/,
         use  : [
           {
-            loader  : 'file-loader',
+            loader  : 'url-loader',
             options : {
               name     : 'images/[name].[ext]',
               emitFile : false
             }
           }
         ]
+      },
+      {
+        test : /\.(mp4|webm)$/,
+        use  : [
+          {
+            loader  : 'file-loader',
+            options : {
+              name: 'videos/[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test   : /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader : 'url-loader?limit=10000&minetype=application/font-woff'
+      },
+      {
+        test   : /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader : 'file-loader?name=[name].[ext]'
       },
       {
         test : /\.md$/,
@@ -60,7 +82,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production')
+        ...globals
       }
     })
   ]

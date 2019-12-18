@@ -1,21 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import AppRoot from './client/containers/AppRoot';
+import { Provider } from 'react-redux';
+import { HelmetProvider } from 'react-helmet-async';
+import AppRoot from './client/AppRoot';
+import configureStore from './shared/store';
+import './shared/styles/app.scss';
 
-function render(Container) {
+const store = configureStore(window.INITIAL_STATE);
+
+function render(Component) {
   ReactDOM.hydrate(
-    <AppContainer>
-      <Container />
-    </AppContainer>,
-    document.getElementById('react-root')
+    <Provider store={store}>
+      <HelmetProvider>
+        <AppContainer>
+          <Component />
+        </AppContainer>
+      </HelmetProvider>
+    </Provider>,
+    document.getElementById('root')
   );
 }
 render(AppRoot);
 
 if (module.hot) {
-  module.hot.accept('./client/containers/AppRoot.js', () => {
-    const NewAppRoot = require('./client/containers/AppRoot.js').default;
+  module.hot.accept('./client/AppRoot.js', () => {
+    const NewAppRoot = require('./client/AppRoot.js').default;
     render(NewAppRoot);
   });
 }
