@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
@@ -76,7 +76,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist', 'build'], { root: path.resolve(__dirname, '../../') }),
+    new CleanWebpackPlugin(),
     new ExtractCssChunks({
       filename      : '[name]-bundle.[contenthash].css',
       chunkFilename : '[name].[contenthash].css',

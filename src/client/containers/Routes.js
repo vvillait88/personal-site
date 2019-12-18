@@ -4,7 +4,7 @@ import { Route, Link } from 'react-router-dom';
 import universal from 'react-universal-component';
 import { Switch } from 'react-router';
 
-const UniversalContainer = universal(props => import(`./${props.page}/index`));
+const UniversalContainer = universal((props) => import(`./${props.page}/index`));
 
 export default () => (
   <div>

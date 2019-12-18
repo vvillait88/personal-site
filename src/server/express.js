@@ -13,7 +13,7 @@ const expressStaticGzip = require('express-static-gzip');
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 let isBuilt = false;
 
 const done = () => {
