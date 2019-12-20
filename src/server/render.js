@@ -43,23 +43,37 @@ export default ({ clientStats }) => (req, res) => {
        <head ${helmet.htmlAttributes.toString()}>
          <!-- Charset -->
          <meta charset="utf-8">
+
          <!-- Mobile Compatability -->
          <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+         <!-- Material-UI Icons -->
+         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+         <!-- jQuery -->
+         <script src="https://code.jquery.com/jquery.js"></script>
+
+         <!-- FontAwesome -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossOrigin="anonymous" />
+
          <!-- SEO -->
-         <meta name="description" content="" />
-         <meta name="keywords" content="" />
+         <meta name="description" content="Varun Villait's Personal Site" />
          <script type="application/ld+json">
          {
            "@context":"http://schema.org",
            "@type":"WebSite",
-           "name":"",
-           "url":""
+           "name":"Varun Villait's Personal Site",
+           "url":"https://varun.villait.org"
          }
          </script>
-         <link rel="canonical" href="">
+         <link rel="canonical" href="https://varun.villait.org">
          ${helmet.title.toString()}
          ${helmet.meta.toString()}
          ${helmet.link.toString()}
+
          ${styles}
        </head>
        <body ${helmet.bodyAttributes.toString()}>

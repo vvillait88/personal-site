@@ -16,11 +16,6 @@ if (result && result.parsed) {
   envs = {
     NODE_ENV : JSON.stringify(process.env.NODE_ENV),
     WEBPACK  : JSON.stringify(process.env.WEBPACK),
-
-    UI_URL         : JSON.stringify(process.env.UI_URL),
-    API_URL        : JSON.stringify(process.env.API_URL),
-    APP_API_KEY    : JSON.stringify(process.env.APP_API_KEY),
-    APP_API_SECRET : JSON.stringify(process.env.APP_API_SECRET),
   };
 }
 

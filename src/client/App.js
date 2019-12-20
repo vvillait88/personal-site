@@ -21,20 +21,20 @@ class App extends Component {
     return (
       <Fragment>
         <Helmet
-          defaultTitle=""
-          titleTemplate="%s | "
+          defaultTitle="Varun Villait"
+          titleTemplate="%s | Varun Villait"
         >
-          <meta property="og:title" content="" />
-          <meta property="og:description" content="" />
-          <meta property="og:url" content="" />
+          <meta property="og:title" content="Varun Villait's Personal Site" />
+          <meta property="og:description" content="Varun Villait's Personal Site" />
+          <meta property="og:url" content="https://varun.villait.org" />
           <meta property="og:image" content="" />
           <meta property="og:type" content="website" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:image" content="" />
-          <meta property="twitter:title" content="" />
-          <meta property="twitter:site" content="" />
-          <meta property="twitter:creator" content="" />
-          <meta property="twitter:description" content="" />
+          <meta property="twitter:title" content="Varun Villait's Personal Site" />
+          <meta property="twitter:site" content="https://varun.villait.org" />
+          <meta property="twitter:creator" content="vvillait88" />
+          <meta property="twitter:description" content="Varun Villait's Personal Site" />
         </Helmet>
 
         <Switch>

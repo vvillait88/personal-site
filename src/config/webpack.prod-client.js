@@ -117,7 +117,7 @@ module.exports = {
       algorithm: 'gzip'
     }),
     new CopyPlugin([{
-      from : './src/client/misc/',
+      from : './src/client/public/',
       to   : path.resolve(__dirname, '../../dist')
     }]),
     new BrotliPlugin()
