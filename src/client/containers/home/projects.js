@@ -1,20 +1,27 @@
+import Industry from './images/projects/ind.jpg';
+import Rebl from './images/projects/rebl.jpg';
+import LeisureX from './images/projects/leisurex.jpg';
+
 export default [
-  {
-    title       : 'Playboy',
-    roles       : 'Product Management, Development and Design',
-    image       : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Playboy_logo.svg/3000px-Playboy_logo.svg.png',
-    description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
   {
     title       : 'Industry',
     roles       : 'Product Management, Development, Operations and Design',
-    image       : 'https://cdn.indst.co/images/Industry_primarylogo_mono.png',
-    description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    image       : Industry,
+    link        : 'https://app.industry.co',
+    description : 'Industry is a two sided job marketplace for service and hospitality.  Businesses come to the platform to hire talent and individuals come to the platform to discover jobs.'
+  },
+  {
+    title       : 'Rebl',
+    roles       : 'Product Management, Development, Operations and Design',
+    image       : Rebl,
+    link        : 'https://www.rebl.cards',
+    description : 'Rebl is the first credit card designed to help you take charge and maintain control of your finances. You are more than just a number, our decisions are based on the money you make, the bills you already pay, your educational history and the business you work at.'
   },
   {
     title       : 'LeisureX',
     roles       : 'Product Management, Development and Design',
-    image       : 'https://cdn.leisurex.org/social/logos/Logo-NoIcon-Black.png',
-    description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
+    image       : LeisureX,
+    link        : 'https://www.leisurex.org',
+    description : 'LeisureX is a booking platform that allows clients to submit their travel inquires to the travel agency which utilizes a wide array of tactics including fuel dumps, points booking and private rates to save you on your travel.'
+  }
 ];
