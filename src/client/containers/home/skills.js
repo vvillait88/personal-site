@@ -71,6 +71,11 @@ export default [
     color : '#F89500'
   },
   {
+    title : 'Google Cloud',
+    icon  : 'google',
+    color : '#4285F5'
+  },
+  {
     fa    : true,
     title : 'Docker',
     icon  : 'docker',
