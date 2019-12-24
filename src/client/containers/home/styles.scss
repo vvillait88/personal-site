@@ -127,7 +127,8 @@
 
     .education,
     .experience,
-    .projects
+    .projects,
+    .skills
     {
         margin-bottom: 48px;
         padding-bottom: 48px;
@@ -163,11 +164,6 @@
 
     .skills
     {
-        margin-bottom: 0;
-        padding-bottom: 0;
-
-        border-bottom: none;
-
         .skill-card
         {
             margin-right: 10px;
@@ -194,6 +190,55 @@
 
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    .contact
+    {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        border-bottom: none;
+
+        label
+        {
+            font: 15px/24px 'opensans-bold', sans-serif;
+
+            margin-bottom: 12px;
+        }
+
+        input,
+        textarea
+        {
+            font-size: 15px;
+            line-height: 24px;
+
+            margin-bottom: 42px;
+            padding: 10px 20px;
+
+            color: #eee;
+            border: 0;
+            outline: none;
+            background: #373233;
+        }
+
+        .button-container
+        {
+            button
+            {
+                font: 16px/30px 'opensans-bold', sans-serif;
+
+                height: auto;
+                margin: auto;
+                padding: 7px 20px;
+
+                cursor: pointer;
+
+                color: #fff;
+                border: none;
+                border-radius: 0;
+                background: #0d0d0d;
             }
         }
     }

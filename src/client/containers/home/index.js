@@ -109,6 +109,30 @@ export default () => (
             </section>
           </section>
         </section>
+        <section className="contact row">
+          <section className="title col-xs-3">
+            <h1><span>Drop Me A Line</span></h1>
+          </section>
+          <section className="content col-xs-9">
+            <form className="row" action="https://formspree.io/mnqjvgbj" method="post">
+              <section className="row col-xs-12">
+                <label htmlFor="name" className="col-xs-2">Name</label>
+                <input id="name" name="name" type="text" className="col-xs-10" required />
+              </section>
+              <section className="row col-xs-12">
+                <label htmlFor="email" className="col-xs-2">Email</label>
+                <input id="email" name="email" type="email" className="col-xs-10" required />
+              </section>
+              <section className="row col-xs-12">
+                <label htmlFor="message" className="col-xs-2">Message</label>
+                <textarea id="message" name="message" className="col-xs-10" required />
+              </section>
+              <section className="row col-xs-12 button-container">
+                <button type="submit">Submit</button>
+              </section>
+            </form>
+          </section>
+        </section>
       </section>
     </section>
   </Fragment>
