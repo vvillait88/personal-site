@@ -21,7 +21,7 @@ export default () => (
           <section className="name-container">
             <h1 className="name">Varun Villait</h1>
           </section>
-          <h3 className="subline">I&apos;m an San Francisco based startup executive with a background in Product, Development, Design, and IT Management</h3>
+          <h3 className="subline">I&apos;m a San Francisco based startup executive with a background in Product Management, Development, Design, Marketing, and IT Management</h3>
           <section className="social">
             <a href="https://www.facebook.com/vvillait" target="_blank" rel="noopener noreferrer">
               <i className="fa-2x fa-fw fab fa-facebook-f" />
