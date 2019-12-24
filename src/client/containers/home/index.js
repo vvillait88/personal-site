@@ -113,7 +113,7 @@ export default () => (
         </section>
         <section className="contact row">
           <section className="title col-xs-3">
-            <h1><span>Drop Me A Line</span></h1>
+            <h1><span>Get In Touch</span></h1>
           </section>
           <section className="content col-xs-9">
             <form className="row" action="https://formspree.io/mnqjvgbj" method="post">

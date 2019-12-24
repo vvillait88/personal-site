@@ -66,6 +66,12 @@ export default [
     color : '#F15030'
   },
   {
+    fa    : true,
+    title : 'Docker',
+    icon  : 'docker',
+    color : '#2395EC'
+  },
+  {
     title : 'AWS',
     icon  : 'aws',
     color : '#F89500'
@@ -74,12 +80,6 @@ export default [
     title : 'Google Cloud',
     icon  : 'google',
     color : '#4285F5'
-  },
-  {
-    fa    : true,
-    title : 'Docker',
-    icon  : 'docker',
-    color : '#2395EC'
   },
   {
     title : 'Windows Server',
