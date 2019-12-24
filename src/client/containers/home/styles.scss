@@ -30,13 +30,63 @@
     z-index: 5;
 }
 
+.greeter
+{
+    font-size: 26px;
+    font-weight: normal;
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+.name-container
+{
+    position: relative;
+    left: 50%;
+
+    width: fit-content;
+
+    transform: translateX(-50%);
+}
+
+.name-container::before,
+.name-container::after
+{
+    position: absolute;
+    top: 50%;
+
+    display: inline-block;
+    zoom: 1;
+
+    width: 80px;
+    height: 2px;
+    margin: 0 10px;
+
+    content: ' ';
+
+    background: #fff;
+}
+
+.name-container::before
+{
+    right: 100%;
+}
+
+.name-container::after
+{
+    left: 100%;
+}
+
 .name
 {
-    font-size: 90px;
+    font-size: 60px;
     font-weight: bold;
     line-height: 1.1em;
 
+    margin: 0 25px;
+
     letter-spacing: -2px;
+    text-transform: uppercase;
 
     text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
 }
@@ -76,30 +126,80 @@
     background: #fff;
 
     .education,
-    .experience
+    .experience,
+    .projects
     {
-        display: flex;
-
         margin-bottom: 48px;
-        padding-bottom: 24px;
+        padding-bottom: 48px;
 
         border-bottom: 1px solid #e8e8e8;
     }
 
+    .projects
+    {
+        .project-card
+        {
+            .project-img
+            {
+                width: 100%;
+            }
+
+            .project-card-container
+            {
+                color: #000;
+
+                .project-title
+                {
+                    color: #000;
+
+                    .project-description
+                    {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
     .skills
     {
-        display: flex;
-
         margin-bottom: 0;
         padding-bottom: 0;
 
         border-bottom: none;
+
+        .skill-card
+        {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+
+            .skill-icon
+            {
+                font-size: 4em;
+
+                width: 100%;
+                padding-top: 10px;
+
+                text-align: center;
+            }
+
+            .skill-card-container
+            {
+                padding: 10 0;
+
+                .skill-title
+                {
+                    font-size: 80%;
+
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .title
     {
-        width: 25%;
-
         h1
         {
             span
@@ -111,13 +211,8 @@
                 letter-spacing: 1px;
                 text-transform: uppercase;
 
-                border-bottom: 3px solid #0762f9;
+                border-bottom: 3px solid #000;
             }
         }
-    }
-
-    .content
-    {
-        width: 75%;
     }
 }

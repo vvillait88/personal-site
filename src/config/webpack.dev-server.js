@@ -13,6 +13,7 @@ module.exports = {
     fs: 'empty'
   },
   output: {
+    globalObject  : 'this',
     filename      : 'dev-server-bundle.js',
     chunkFilename : '[name].js',
     path          : path.resolve(__dirname, '../../build'),

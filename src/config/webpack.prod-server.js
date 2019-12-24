@@ -13,6 +13,7 @@ module.exports = {
     fs: 'empty'
   },
   output: {
+    globalObject  : 'this',
     filename      : 'prod-server-bundle.js',
     path          : path.resolve(__dirname, '../../build'),
     libraryTarget : 'commonjs2'

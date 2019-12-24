@@ -19,6 +19,7 @@ module.exports = {
     ]
   },
   output: {
+    globalObject  : 'this',
     filename      : '[name]-bundle.js',
     chunkFilename : '[name].js',
     path          : path.resolve(__dirname, '../dist'),

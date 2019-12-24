@@ -57,7 +57,13 @@ export default ({ clientStats }) => (req, res) => {
          <script src="https://code.jquery.com/jquery.js"></script>
 
          <!-- FontAwesome -->
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossOrigin="anonymous" />
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossOrigin="anonymous" />
+
+         <!-- Fontisto -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto-brands.min.css" />
+
+         <!-- FlexBox Grid -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" />
 
          <!-- SEO -->
          <meta name="description" content="Varun Villait's Personal Site" />

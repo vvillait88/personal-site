@@ -22,6 +22,7 @@ module.exports = {
     fs: 'empty'
   },
   output: {
+    globalObject  : 'this',
     filename      : '[name]-bundle.[contenthash].js',
     chunkFilename : '[name].[contenthash].js',
     path          : path.resolve(__dirname, '../../dist'),

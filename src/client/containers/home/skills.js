@@ -1,79 +1,79 @@
 export default [
   {
-    type  : 'Java',
-    level : 100,
-    color : {
-      bar   : '#3498db',
-      title : {
-        text       : '#fff',
-        background : '#2980b9'
-      }
-    }
+    title : 'React/React Native',
+    icon  : 'react',
+    color : '#61DBFB'
   },
   {
-    type  : 'React',
-    level : 85,
-    color : {
-      bar   : '#4288d0',
-      title : {
-        text       : '#fff',
-        background : '#124e8c'
-      }
-    }
+    title : 'Redux',
+    icon  : 'redux',
+    color : '#7648BE'
   },
   {
-    type  : 'Javascript',
-    level : 75,
-    color : {
-      bar   : '#2c3e50',
-      title : {
-        text       : '#fff',
-        background : '#2c3e50'
-      }
-    }
+    title : 'HTML5',
+    icon  : 'html5',
+    color : '#DE4B26'
   },
   {
-    type  : 'Spring',
-    level : 50,
-    color : {
-      bar   : '#5a68a5',
-      title : {
-        text       : '#fff',
-        background : '#46465e'
-      }
-    }
+    fa    : true,
+    title : 'Javascript',
+    icon  : 'js-square',
+    color : '#F7DF1E'
   },
   {
-    type  : 'Docker',
-    level : 25,
-    color : {
-      bar   : '#525252',
-      title : {
-        text       : '#fff',
-        background : '#333333'
-      }
-    }
+    title : 'Sass',
+    icon  : 'sass',
+    color : '#C96195'
   },
   {
-    type  : 'HTML',
-    level : 20,
-    color : {
-      bar   : 'black',
-      title : {
-        text       : '#111',
-        background : '#fff'
-      }
-    }
+    title : 'NodeJS',
+    icon  : 'nodejs',
+    color : '#8CC84B'
   },
   {
-    type  : 'NoSQL',
-    level : 0,
-    color : {
-      bar   : '#2ecc71',
-      title : {
-        text       : '#fff',
-        background : '#27ae60'
-      }
-    }
-  }
+    title : 'Webpack',
+    icon  : 'webpack',
+    color : '#8ED5FA'
+  },
+  {
+    title : 'iOS',
+    icon  : 'apple',
+    color : '#A3AAAE'
+  },
+  {
+    title : 'Android',
+    icon  : 'android',
+    color : '#78C257'
+  },
+  {
+    title : 'MongoDB',
+    icon  : 'mongodb',
+    color : '#4DB33D'
+  },
+  {
+    title : 'GraphQL',
+    icon  : 'graphql',
+    color : '#E535AB'
+  },
+  {
+    title : 'Git',
+    icon  : 'git',
+    color : '#F15030'
+  },
+  {
+    title : 'AWS',
+    icon  : 'aws',
+    color : '#F89500'
+  },
+  {
+    fa    : true,
+    title : 'Sketch',
+    icon  : 'sketch',
+    color : '#FDAD00'
+  },
+  {
+    title : 'Invision',
+    icon  : 'invision',
+    color : '#EC355C'
+  },
 ];
