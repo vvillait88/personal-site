@@ -37,7 +37,7 @@ export default () => (
             <a href="https://www.github.com/vvillait88" target="_blank" rel="noopener noreferrer">
               <i className="fa-2x fa-fw fab fa-github" />
             </a>
-            <a href="/varun-resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/varunvillait-resume.pdf" target="_blank" rel="noopener noreferrer">
               <i className="fa-2x fa-fw fas fa-file" />
             </a>
           </section>
