@@ -109,7 +109,7 @@
     {
         margin: 15px;
 
-        color: white;
+        color: #fff;
     }
 }
 
@@ -199,7 +199,7 @@
         margin-bottom: 0;
         padding-bottom: 0;
 
-        border-bottom: none;
+        border-bottom: 0;
 
         label
         {
@@ -217,10 +217,10 @@
             margin-bottom: 42px;
             padding: 10px 20px;
 
-            color: #eee;
+            color: #fff;
             border: 0;
             outline: none;
-            background: #373233;
+            background: #000;
         }
 
         .button-container
@@ -236,7 +236,7 @@
                 cursor: pointer;
 
                 color: #fff;
-                border: none;
+                border: 0;
                 border-radius: 0;
                 background: #0d0d0d;
             }

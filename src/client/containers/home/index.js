@@ -44,41 +44,43 @@ export default () => (
     </header>
     <section className="resume-content-container">
       <section className="resume-content">
-        <section className="education row">
-          <section className="title col-xs-3">
-            <h1><span>Education</span></h1>
-          </section>
-          <section className="content col-xs-9">
-            <p>Coming Soon</p>
-          </section>
-        </section>
-        <section className="experience row">
-          <section className="title col-xs-3">
-            <h1><span>Experience</span></h1>
-          </section>
-          <section className="content col-xs-9">
-            <p>Coming Soon</p>
-          </section>
-        </section>
         {false ? (
-          <section className="projects row">
-            <section className="title col-xs-3">
-              <h1><span>Projects</span></h1>
-            </section>
-            <section className="content col-xs-9">
-              <section className="row">
-                {projects.map((project) => (
-                  <section className="project-card col-xs-12 col-lg-4">
-                    <img className="project-img" src={project.image} alt={project.title} />
-                    <section className="project-card-container">
-                      <p className="project-roles">{project.roles}</p>
-                      <p className="project-description">{project.description}</p>
-                    </section>
-                  </section>
-                ))}
+          <Fragment>
+            <section className="education row">
+              <section className="title col-xs-3">
+                <h1><span>Education</span></h1>
+              </section>
+              <section className="content col-xs-9">
+                <p>Coming Soon</p>
               </section>
             </section>
-          </section>
+            <section className="experience row">
+              <section className="title col-xs-3">
+                <h1><span>Experience</span></h1>
+              </section>
+              <section className="content col-xs-9">
+                <p>Coming Soon</p>
+              </section>
+            </section>
+            <section className="projects row">
+              <section className="title col-xs-3">
+                <h1><span>Projects</span></h1>
+              </section>
+              <section className="content col-xs-9">
+                <section className="row">
+                  {projects.map((project) => (
+                    <section className="project-card col-xs-12 col-lg-4">
+                      <img className="project-img" src={project.image} alt={project.title} />
+                      <section className="project-card-container">
+                        <p className="project-roles">{project.roles}</p>
+                        <p className="project-description">{project.description}</p>
+                      </section>
+                    </section>
+                  ))}
+                </section>
+              </section>
+            </section>
+          </Fragment>
         ) : null}
         <section className="skills row">
           <section className="title col-xs-3">
