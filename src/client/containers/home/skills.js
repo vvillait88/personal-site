@@ -10,6 +10,11 @@ export default [
     color : '#7648BE'
   },
   {
+    title : 'Electron',
+    icon  : 'electronjs',
+    color : '#6BA0AD'
+  },
+  {
     title : 'HTML5',
     icon  : 'html5',
     color : '#DE4B26'
@@ -67,6 +72,28 @@ export default [
   },
   {
     fa    : true,
+    title : 'Docker',
+    icon  : 'docker',
+    color : '#2395EC'
+  },
+  {
+    title : 'Windows Server',
+    icon  : 'windows',
+    color : '#01ADEF'
+  },
+  {
+    title : 'Algolia',
+    icon  : 'algolia',
+    color : '#5264F8'
+  },
+  {
+    fa    : true,
+    title : 'Stripe',
+    icon  : 'stripe',
+    color : '#6772E6'
+  },
+  {
+    fa    : true,
     title : 'Sketch',
     icon  : 'sketch',
     color : '#FDAD00'
@@ -75,5 +102,52 @@ export default [
     title : 'Invision',
     icon  : 'invision',
     color : '#EC355C'
+  },
+  {
+    title : 'Jira',
+    icon  : 'jira',
+    color : '#0D64DE'
+  },
+  {
+    fa      : true,
+    noBrand : true,
+    title   : 'SEO',
+    icon    : 'search',
+    color   : '#000000'
+  },
+  {
+    fa    : true,
+    title : 'Facebook Ads',
+    icon  : 'facebook-square',
+    color : '#4267B2'
+  },
+  {
+    fa    : true,
+    title : 'Instagram Ads',
+    icon  : 'instagram',
+    color : '#833AB4'
+  },
+  {
+    fa    : true,
+    title : 'Twitter Ads',
+    icon  : 'twitter',
+    color : '#00aced'
+  },
+  {
+    title : 'Telegram Bots',
+    icon  : 'telegram',
+    color : '#2EA6DA'
+  },
+  {
+    fa    : true,
+    title : 'Messenger Bots',
+    icon  : 'facebook-messenger',
+    color : '#0082FF'
+  },
+  {
+    fa    : true,
+    title : 'Slack Bots',
+    icon  : 'slack',
+    color : '#49154A'
   },
 ];

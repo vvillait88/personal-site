@@ -60,7 +60,7 @@ export default ({ clientStats }) => (req, res) => {
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossOrigin="anonymous" />
 
          <!-- Fontisto -->
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto-brands.min.css" />
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css" />
 
          <!-- FlexBox Grid -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" />
