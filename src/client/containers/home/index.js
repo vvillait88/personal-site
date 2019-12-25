@@ -13,6 +13,24 @@ export default () => (
     <header className="cover">
       <Particles
         style={{ position: 'absolute' }}
+        params={{
+          particles: {
+            number: {
+              value: 50
+            },
+            size: {
+              value: 3
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable : true,
+                mode   : 'repulse'
+              }
+            }
+          }
+        }}
       />
       <section className="cover-content-container">
         <section className="cover-content">
