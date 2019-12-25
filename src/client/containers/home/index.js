@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import ParticlesBG from 'particles-bg';
+import Particles from 'react-particles-js';
 
 import educations from './educations';
 import experiences from './experiences';
@@ -8,14 +8,11 @@ import skills from './skills';
 
 import './styles.scss';
 
-
 export default () => (
   <Fragment>
     <header className="cover">
-      <ParticlesBG
-        color="#FFFFFF"
-        type="cobweb"
-        bg
+      <Particles
+        style={{ position: 'absolute' }}
       />
       <section className="cover-content-container">
         <section className="cover-content">
