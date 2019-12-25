@@ -26,10 +26,10 @@ class App extends Component {
           <meta property="og:title" content="I'm Varun Villait" />
           <meta property="og:description" content="Varun Villait's Personal Site" />
           <meta property="og:url" content="https://varun.villait.org" />
-          <meta property="og:image" content="" />
+          <meta property="og:image" content="https://cdn.rebl.cards/personal-site/seo/varun.jpg" />
           <meta property="og:type" content="website" />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:image" content="" />
+          <meta property="twitter:image" content="https://cdn.rebl.cards/personal-site/seo/varun.jpg" />
           <meta property="twitter:title" content="I'm Varun Villait" />
           <meta property="twitter:site" content="https://varun.villait.org" />
           <meta property="twitter:creator" content="vvillait88" />
